@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MauiApp9.Pages;
 
 namespace MauiApp9;
-public partial class AppShell : Shell
+class AppShell : Shell
 {
     // Dictionary to map page types to their routes
     private static readonly Dictionary<Type, string> RouteMap = new()
@@ -20,7 +16,7 @@ public partial class AppShell : Shell
         Items.Add(new FlyoutItem
         {
             Title = "Home",
-            Icon = "home_icon.png",
+            Icon = "dotnet_bot.png",
             Items = { new ShellContent { Content = mainPage } }
         });
 

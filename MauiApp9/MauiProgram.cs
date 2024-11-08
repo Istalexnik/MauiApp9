@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Markup;
 using MauiApp9.Helpers;
+using MauiApp9.Pages;
+using MauiApp9.ViewModels;
 using Microsoft.Extensions.Logging;
 
 namespace MauiApp9;
@@ -24,7 +26,7 @@ public static class MauiProgram
 #endif
         builder.Services.AddSingleton<App>();
         builder.Services.AddSingleton<AppShell>();
-        //builder.Services.AddTransientWithShellRoute<MainPage, MainViewModel>($"//{nameof(MainPage)}");
+        builder.Services.AddTransientWithShellRoute<MainPage, MainViewModel>($"//{nameof(MainPage)}");
         builder.Services.AddSingleton<ICommunityToolkitHotReloadHandler, HotReloadHandler>();
 
         return builder.Build();
