@@ -26,8 +26,8 @@ public static class MauiProgram
 #endif
         builder.Services.AddSingleton<App>();
         builder.Services.AddSingleton<AppShell>();
-        builder.Services.AddTransientWithShellRoute<MainPage, MainViewModel>($"//{nameof(MainPage)}");
         builder.Services.AddSingleton<ICommunityToolkitHotReloadHandler, HotReloadHandler>();
+        builder.Services.AddTransientWithShellRoute<MainPage, MainViewModel>($"//{nameof(MainPage)}");
 
         return builder.Build();
     }
