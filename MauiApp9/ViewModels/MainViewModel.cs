@@ -2,10 +2,10 @@
 using CommunityToolkit.Mvvm.Input;
 
 namespace MauiApp9.ViewModels;
-internal partial class MainViewModel : BaseViewModel
+partial class MainViewModel : BaseViewModel
 {
     public MainViewModel()
-    {     
+    {
     }
 
     [ObservableProperty]
