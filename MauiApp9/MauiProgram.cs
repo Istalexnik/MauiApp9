@@ -24,7 +24,7 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-        builder.Services.AddSingleton<App>();
+
         builder.Services.AddSingleton<AppShell>();
         builder.Services.AddSingleton<ICommunityToolkitHotReloadHandler, HotReloadHandler>();
         builder.Services.AddTransientWithShellRoute<MainPage, MainViewModel>($"//{nameof(MainPage)}");
